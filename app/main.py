@@ -10,7 +10,7 @@ class COFFE(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("main.ui", self)
-        self.conn = sqlite3.connect("coffee.sqlite")
+        self.conn = sqlite3.connect("data/coffee.sqlite")
         self.cur = self.conn.cursor()
         self.init_ui()
 
